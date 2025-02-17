@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrogMangás</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+
+<body>
+
+<header>
+
+    <header>
+    <div class="logo-container">
+        <img src="https://minecraft.wiki/images/Lily_Pad_%28on_the_water%29.png?32688" alt="Imagem Esquerda" class="logo-img">
+        <h1 class="logo">FrogMangás</h1>
+        <img src="https://minecraft.wiki/images/Lily_Pad_%28on_the_water%29.png?32688" alt="Imagem Direita" class="logo-img">
+    </div>
+</header>
+
+    <div class="header-bottom">
+        <nav> 
+            
+            <ul>
+                <li class="link"><a href="#inicio">Início</a></li>
+              <li class="link"><a href="#" onclick="toggleCategorias()">Categorias</a></li>
+                <li class="link"><a href="#pesquisar">Pesquisar</a></li>
+                <li class="link"> <a href="https://discord.gg/rMT9HB4rVd">Discord</a></li>
+            </ul>
+           <section id="categorias" class="hidden-section">
+    <ul>
+        <li class="link2"><a href="#pesquisar">Ação</a></li>
+        <li class="link2"><a href="#pesquisar">Terror</a></li>
+        <li class="link2"><a href="#pesquisar">Romance</a></li>
+        <li class="link2"><a href="#pesquisar">Comédia</a></li>
+    </ul>
+</section>
+        </nav>
+    </div>
+</header>
+
+
+    <section id="inicio">
+        <h2 class= "title">Recomendação do Dia</h2>
+        <p class="texto-especial">Confira nossa recomendação de hoje: <strong class="texto-verde">Dugeon Meshi!</strong></p>
+    
+    <div class="recomendacao">
+        <figure>
+             <a href="volumes.html?manga=dugeonMeshi" class="manga-link">
+                <img src="https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_pgoo2ep1n119t08p832oc58b69/-S897-FWEBP" alt="Stone Ocean" class="manga-img">
+            </a>
+        </figure>
+        <p class="sinopse">
+            "Em um mundo de masmorras perigosas, o aventureiro Laios perde sua irmã para um dragão e decide resgatá-la. Sem suprimentos, ele e seu grupo aprendem a cozinhar os monstros que enfrentam, transformando a sobrevivência em uma jornada culinária inesperada. Enquanto exploram a masmorra, eles descobrem segredos ocultos e enfrentam desafios cada vez mais perigosos."
+        </p>
+    </div>
+        
+    </section>
+    <section id="pesquisar">
+        <h3 class="title2">Pesquisar Mangás</h3>
+<input type="text" id="searchBox" placeholder="Digite o nome do mangá...">
+<ul id="searchResults"></ul>
+
+    </section>
+
+      <section id="recentes">
+    <h3 class="title2">Favoritos</h3>
+    <div class="mangas">
+        <figure>
+            <a href="volumes.html?manga=dragonball" class="manga-link">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa8RntX33uIc53i-G4ofy5TRybHg6z2LrQ9g&s" alt="Dragon Ball">
+            </a>
+            <figcaption class="titulo">Dragon Ball</figcaption>
+        </figure>
+
+        <figure>
+            <a href="volumes.html?manga=vilandSaga" class="manga-link">
+                <img src="https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_p4uugvjt7p6e93tqi1hh3kkt7p/-S897-FWEBP" alt="Naruto">
+            </a>
+            <figcaption class="titulo">Viland Saga</figcaption>
+        </figure>
+
+        <figure>
+            <a href="volumes.html?manga=bleach" class="manga-link">
+                <img src="https://m.media-amazon.com/images/I/81gDlMB1fUL._UF894,1000_QL80_.jpg" alt="Bleach">
+            </a>
+            <figcaption class="titulo">Bleach</figcaption>
+        </figure>
+
+         <figure>
+            <a href="volumes.html?manga=onepiece" class="manga-link">
+                <img src="https://m.media-amazon.com/images/I/716EGgqzyOL._AC_UF1000,1000_QL80_.jpg" alt="One Piece">
+            </a>
+            <figcaption class="titulo">One Piece</figcaption>
+        </figure>
+    </div>
+</section>
+
+    <section id="recentes">
+
+    <h3 class="title2">Nosso Catálogo</h3>
+    <div class="mangas">
+        <figure>
+           <a href="volumes.html?manga=jujutsuKaisen" class="manga-link">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReVbNMjg5l5X2U9oJvu2Adtv0nkLFvaf33tQ&s" alt="Jujutsu Kaisen">
+            </a>
+            <figcaption class="titulo">Jujutsu Kaisen</figcaption>
+        </figure>
+
+        <figure>
+            <a href="volumes.html?manga=sakamotoDays" class="manga-link">
+                <img src="https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_es2if13f8506j6hn3680t2gu3d/-S897-FWEBP" alt="Jojo Part3">
+            </a>
+            <figcaption class="titulo">Sakamoto Days</figcaption>
+        </figure>
+
+        <figure>
+            <a href="volumes.html?manga=blueLock" class="manga-link">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/1/1c/Blue_Lock_-_capa_do_volume_1.jpg">
+            </a>
+            <figcaption class="titulo">Blue Lock</figcaption>
+        </figure>
+
+         <figure>
+            <a href="volumes.html?manga=hunterXHunter" class="manga-link">
+                <img src="https://m.media-amazon.com/images/I/91W4gCWVdOL._UF894,1000_QL80_.jpg" alt="One Piece">
+            </a>
+            <figcaption class="titulo">Hunter X Hunter</figcaption>
+        </figure>
+
+    </div>
+</section>
+
+    <div class="mangas">
+        <figure>
+             <a href="volumes.html?manga=blackClover" class="manga-link">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKW5wJc6iM4cmZXeKtommfVb04Pa0eHup_DQ&s" alt="Black Clover">
+            </a>
+            <figcaption class="titulo">Black Clover</figcaption>
+        </figure>
+
+        <figure>
+             <a href="volumes.html?manga=bokunoHero" class="manga-link">
+                <img src="https://www.jbchost.com.br/editorajbc/wp-content/uploads/2016/09/MHA-01-Capa-1-300x456.jpg" alt="Berserk">
+            </a>
+            <figcaption class="titulo">Boku no Hero</figcaption>
+        </figure>
+
+        <figure>
+            <a href="volumes.html?manga=recordsofRagnarok" class="manga-link">
+                <img src="https://www.newpop.com.br/wp-content/uploads/2021/07/NewPOP_Ragnarok_01.jpg" alt="FullMetal Alchemist">
+            </a>
+            <figcaption class="titulo">Records of Ragnarok</figcaption>
+        </figure>
+
+         <figure>
+             <a href="volumes.html?manga=frieren" class="manga-link">
+                <img src="https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_eeug4hput57un7pkh60eeupn1e/-S897-FWEBP" alt="One Piece">
+            </a>
+            <figcaption class="titulo">Frieren</figcaption>
+        </figure>
+    </div>
+</section>
+
+
+<li class="mais"><a href="javascript:void(0);" onclick="toggleMais()">Ver Mais ⬇</a></li>
+
+<section id="verMais" class="hidden-section2">
+    <div class="mangas">
+       <figure>
+          <a href="volumes.html?manga=uzumaki" class="manga-link">
+                <img src="https://m.media-amazon.com/images/I/8120HBi8AAL._UF894,1000_QL80_.jpg" alt="Dragon Ball">
+            </a>
+            <figcaption class="titulo">Uzumaki</figcaption>
+        </figure>
+
+        <figure>
+            <a href="volumes.html?manga=punpun" class="manga-link">
+                <img src="https://www.jbchost.com.br/editorajbc/wp-content/uploads/2018/12/Boa-Noite-Punpun-01-Capa_p-300x455.jpg" alt="Naruto">
+            </a>
+            <figcaption class="titulo">Punpun</figcaption>
+        </figure>
+
+        <figure>
+           <a href="volumes.html?manga=onePunchMan" class="manga-link">
+                <img src="https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_7i6mh330r13r5e023ldosim535/-S897-FWEBP" alt="Bleach">
+            </a>
+            <figcaption class="titulo">One Punch Man</figcaption>
+        </figure>
+
+         <figure>
+        <a href="volumes.html?manga=deathNote" class="manga-link">
+                <img src="https://www.jbchost.com.br/editorajbc/wp-content/uploads/2013/06/dn-black-edition-01-300x456.jpg" alt="One Piece">
+            </a>
+            <figcaption class="titulo">Death Note</figcaption>
+        </figure>
+    </div>
+</section>
+
+
+ <footer class="footer">
+          <p>
+            <a href="#inicio">Home</a> | 
+            <a href="#@frogar335@gmail.com">Contato</a> | 
+            <a href="#pesquisar">Mangás</a>
+        </p>
+    </footer>
+</body>
+<script>
+    function toggleCategorias() {
+        var section = document.getElementById("categorias");
+        
+        if (section.style.display === "none" || section.style.display === "") {
+            section.style.display = "block";
+        } else {
+            section.style.display = "none";
+        }
+    }
+</script>
+
+<script>
+    function toggleMais() {
+        var section = document.getElementById("verMais");
+        // Alterna entre mostrar e esconder
+        if (section.style.display === "none" || section.style.display === "") {
+            section.style.display = "block";
+        } else {
+            section.style.display = "none";
+        }
+    }
+</script>
+<script>
+// Lista de mangás disponíveis
+const mangas = ["dragonball", "vilandSaga", "bleach", "blueLock","jujutsuKaisen","sakamotoDays","hunterXHunter","blackClover","bokunoHero","recordsofRagnarok","frieren","uzumaki","punpun","onePunchMan","deathNote","dugeonMeshi"];
+
+// Função para pesquisar e redirecionar
+document.getElementById("searchBox").addEventListener("input", function() {
+    let input = this.value.toLowerCase();
+    let searchResults = document.getElementById("searchResults");
+    
+    searchResults.innerHTML = "";
+
+    if (input.length > 0) {
+        mangas.forEach(manga => {
+            if (manga.includes(input)) {
+                let li = document.createElement("li");
+                li.textContent = manga.charAt(0).toUpperCase() + manga.slice(1); // Formata o nome
+                li.addEventListener("click", function() {
+                    window.location.href = `volumes.html?manga=${manga}`; // Redireciona ao clicar
+                });
+                searchResults.appendChild(li);
+            }
+        });
+    }
+});
+
+// Permitir pressionar "Enter" para buscar
+document.getElementById("searchBox").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        let input = this.value.toLowerCase();
+        if (mangas.includes(input)) {
+            window.location.href = `volumes.html?manga=${input}`;
+        } else {
+            alert("Mangá não encontrado! Tente outro nome.");
+        }
+    }
+});
+
+</script>
+<script>
+    document.getElementById("searchBox").addEventListener("input", function() {
+    let input = this.value.toLowerCase();
+    let searchResults = document.getElementById("searchResults");
+    
+    searchResults.innerHTML = "";
+
+    if (input.length > 0) {
+        mangas.forEach(manga => {
+            if (manga.includes(input)) {
+                let li = document.createElement("li");
+                li.textContent = manga.charAt(0).toUpperCase() + manga.slice(1); // Formata o nome
+                li.addEventListener("click", function() {
+                    window.location.href = `volumes.html?manga=${manga}`; // Redireciona ao clicar
+                });
+                searchResults.appendChild(li);
+            }
+        });
+    }
+});
+</script>
+<script>
+    document.querySelectorAll('.mangas .manga-link').forEach(link => {
+    // Adiciona um evento de clique para cada link
+    link.addEventListener('click', function(event) {
+        event.preventDefault(); // Impede o comportamento padrão do link (abrir uma nova página)
+        
+        // Pega a URL do link clicado
+        let url = this.href;
+        
+        
+        window.location.href = url;
+    });
+});
+</script>
+
+</html>

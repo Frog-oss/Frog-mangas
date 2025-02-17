@@ -1,0 +1,328 @@
+/* Estilo geral do corpo */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    text-align: center;
+}
+
+/* Estilo para a seção de pesquisa */
+#pesquisar {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#searchBox {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#searchResults {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#searchResults li {
+    padding: 10px;
+    background: #333; /* Cor de fundo de cada item */
+    color: #fff; /* Cor do texto */
+    font-family: 'Lexend Giga', sans-serif; /* Fonte personalizada */
+    font-size: 16px;
+    border-bottom: 1px solid #444; /* Linha separadora */
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+#searchResults li:last-child {
+    border-bottom: none; /* Remove a linha do último item */
+}
+
+#searchResults li:hover {
+    background: #4CAF50; /* Cor ao passar o mouse */
+    color: #000; /* Muda a cor do texto */
+}
+
+/* Estilização do cabeçalho superior */
+ <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .header-top {
+            background-color: #f8f9fa;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            height: 60px; /* Mantém a altura fixa do cabeçalho */
+        }
+
+        .logo-container img {
+            height: 40px; /* Aumenta a logo sem afetar a altura do cabeçalho */
+            width: auto;
+        }
+
+
+/* Estilização do cabeçalho inferior */
+.header-bottom {
+    background-color: green;
+    border-bottom: 2px solid #000000;
+    text-align: center;
+    padding: 3px 0;
+}
+
+/* Estilização do menu */
+.header-bottom nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header-bottom nav ul li {
+    display: inline;
+}
+
+.header-bottom nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    padding: 19px;
+    transition: 0.3s;
+}
+
+.header-bottom nav ul li a:hover {
+    color: #000000;
+}
+
+/* Seção de recomendação */
+#inicio {
+    padding: 40px 20px;
+}
+
+.recomendacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Estilização da imagem */
+.recomendacao img {
+    width: 250px;
+    height: auto; /* Mantém a proporção correta */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+}
+
+.recomendacao img:hover {
+    transform: scale(1.05);
+}
+
+.recomendacao .sinopse {
+    font-family: 'Lexend Giga', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .recomendacao {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .recomendacao img {
+        margin-bottom: 15px;
+    }
+}
+
+.recom {
+    margin-top: -20px; /* Ajusta a posição para mais perto */
+    text-align: center; /* Centraliza o texto */
+    font-size: 24px; /* Ajusta o tamanho da fonte */
+}
+
+
+.mangas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.mangas img {
+    width: 180px; /* Ajuste conforme necessário */
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.mangas img:hover {
+    transform: scale(1.05);
+}
+
+.titulo {
+    font-family: 'Lexend Giga', sans-serif;
+    text-align: center;
+    font-size: 1.0em;
+    margin-top: 7px;
+    color: #fff; /* Texto branco */
+}
+
+.texto-especial {
+    font-family: 'Lexend Giga', sans-serif;
+}
+
+.texto-verde {
+    color: green;
+}
+
+
+.logo {
+    font-family: 'Jersey 15', sans-serif;
+      font-size: 45px;
+    text-transform: none;
+    color: #4CAF50; /* Escolha a cor desejada */
+}
+
+.logo-container {
+    display: flex; /* Ativa o flexbox */
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 10px; /* Espaço entre a logo e as imagens */
+}
+
+.logo-img {
+    width: 10px; /* Ajuste conforme necessário */
+    height: 10px;
+}
+
+.logo {
+    font-family: 'Jersey 15', sans-serif;
+    text-transform: none;
+    font-size: 62px;
+}
+
+.link {
+    font-family: 'Jersey 15', sans-serif;
+    text-transform: none;
+    font-size: 22px;
+    color: green;
+}
+.mais a {
+       list-style: none;
+    display: inline-block;
+    background-color: #006400; /* Cor verde chamativa */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.mais a:hover {
+    background-color: #45a049; /* Tom mais escuro ao passar o mouse */
+    transform: scale(1.05); /* Efeito de leve aumento */
+}
+
+
+ /* Esconde a seção de categorias */
+.hidden-section {
+    display: none;
+    background: #f4f4f4;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.link2 {
+    font: bold 16px 'Jersey 15', sans-serif;
+  background: #ffcc00;
+  color: #000000;
+  padding: 7px 7px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.hidden-section2 {
+    display: none;
+    background: #00000;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.hidden-section {
+    display: none;
+    background: green;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.title {
+     font-family: 'Jersey 15', sans-serif;
+    text-transform: none;
+     margin-top: -20px; /* Ajusta a posição para mais perto */
+    text-align: center; /* Centraliza o texto */
+    font-size: 42px;
+}
+
+.title2 {
+     font-family: 'Jersey 15', sans-serif;
+    text-transform: none;
+    font-size: 30px;
+    color: green;
+}
+
+
+   footer {
+            text-align: center;
+              font-family: 'Lexend Giga', sans-serif;
+            padding: 4px;
+            background-color: green;
+            color: black;
+            font-size: 14px;
+        }
+        footer a {
+            color: white;
+              font-family: 'Lexend Giga', sans-serif;
+            text-decoration: none;
+            margin: 0 10px;
